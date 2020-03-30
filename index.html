@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1" />
+    <title>Coding Challenge</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section class="home">
+        <div class="container">
+            <div class="row">
+                <button id="load-data" type="button" class="btn btn-primary">Load Data</button>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h3>
+                        Id
+                    </h3>
+                </div>
+                <div class="col-4">
+                    <h3>
+                        name
+                    </h3>
+                </div>
+                <div class="col-sm">
+                    <h3>
+                        url
+                    </h3>
+                </div>
+            </div>
+            <div class="underline"></div>
+            <div  id="data-container"></div>
+        </div>
+        </div>
+    </section>
+
+    <script id="dataTemplate" type="text/x-handlebars-template">
+        {{#each data}}
+       <div class="row">
+                <div class="col-2">
+                    <h3>
+                        {{id}}
+                    </h3>
+                </div>
+                <div class="col-4">
+                    <h3>
+                        {{author}}
+                    </h3>
+                </div>
+                <div class="col-sm">
+                    <h3>
+                        url
+                    </h3>
+                </div>
+            </div>
+            <div class="underline"></div>
+        {{/each}}
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.home {
+    height: 100vh;
+    margin-top: 200px;
+}
+
+.underline {
+    border: 1px solid #DFDFDF;
+}
+
+.row h3 {
+    font-size: 20px;
+}
+
+#load-data.btn.btn-primary {
+  margin-left: 90%;
+  background-color: #1D6BA8;
+}
