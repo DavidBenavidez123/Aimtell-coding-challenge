@@ -1,7 +1,7 @@
 const dataButton = document.querySelector("#load-data")
 
 const loadData = () => {
-    axios.get('https://picsum.photos/v2/list')
+    axios.get('http://aimtell.com/files/sites.json')
         .then(response => {
             data = response.data
             createHTML(data)
